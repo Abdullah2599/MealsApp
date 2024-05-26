@@ -9,14 +9,22 @@ class Categories extends StatelessWidget {
       appBar: AppBar(
         title: Text("Pick your Category"),
       ),
-      body: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20,
-            childAspectRatio: 3 / 2,
-          ),
-          itemBuilder: itemBuilder),
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
+          childAspectRatio: 3 / 2,
+        ),
+        children: [
+          Text('data'),
+          Text('data'),
+          Text('data'),
+          Text('data'),
+          Text('data'),
+          Text('data'),
+        ],
+      ),
     );
   }
 }
